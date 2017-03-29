@@ -9,9 +9,9 @@
 <body>
 <form method="get" action="" id="mainForm">
 <div id="searchBox">
-	<input type="search" id="titleSearch" onkeyup="titleSearchFunction()"  placeholder="Search titles">
-	<input type="submit" value="Search">
-	<select name="genre">
+	<input type="search" id="titleSearch" placeholder="Search Titles">
+	<button type="button" value="Submit" onclick="titleSearchFunction()">Search</button>
+	<select name="genre"  id="genreSearch" onchange="genreSearchFunction()">
 		<option selected>Genre</option>
 		<option>Baroque</option>
 		<option>Mannerism</option>
