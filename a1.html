@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>COMP5347 Assignment One</title>
+   <link rel="stylesheet" href="a1.css" />
+   <script type="text/javascript" src="a1.js"></script>
+</head>
+<body>
+<form method="get" action="" id="mainForm">
+<div id="searchBox">
+	<input type="search" id="titleSearch" onkeyup="titleSearchFunction()"  placeholder="Search titles">
+	<input type="submit" value="Search">
+	<select name="genre">
+		<option selected>Genre</option>
+		<option>Baroque</option>
+		<option>Mannerism</option>
+		<option>Neo-Classicism</option>
+		<option>Realism</option>
+		<option>Romanticism</option>
+	</select>
+	<input type="submit" value="Filter">
+ 
+</div>
+<div id="artistBox">
+	<table id="paintings">
+		<caption>Paintings</caption>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Artist</th>
+				<th>Year</th>
+				<th>Genre</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="pp">
+				<td class="tt">
+					<input type="checkbox" name="pic" value="pic1"><img src="https://news.artnet.com/app/news-upload/2015/02/brian-williams-death-of-marat-256x256.jpg" style="width:128px;height:128px;"/>
+					<i>Death of Marat</i>
+				</td>
+				<td>
+					<a>David, Jacques-Louis</a>
+				</td>
+				<td>
+					<a>1793</a>
+				</td>
+				<td class="gg">
+					<a>Romanticism</a>
+				</td>
+			</tr>
+			<tr class="pp">
+				<td class="tt">
+					<input type="checkbox" name="pic" value="pic2"><img src="https://s-media-cache-ak0.pinimg.com/736x/75/26/3f/75263f8ee428369491fb338353dfd94f.jpg" style="width:128px;height:128px;"/>
+					<i>Portrait of Eleonora of Toledo</i>
+				</td>
+				<td>
+					<a>Bronzino, Agnolo</a>
+				</td>
+				<td>
+					<a>1545</a>
+				</td>
+				<td class="gg">
+					<a>Mannerism</a>
+				</td>
+			</tr>
+			<tr class="pp">
+				<td class="tt">
+					<input type="checkbox" name="pic" value="pic3"><img src="http://www.canal-educatif.fr/videos/art/delacroix/complements/zoom/TileGroup0/2-1-0.jpg" style="width:128px;height:128px;"/>
+					<i>Liberty Leading the People</i>
+				</td>
+				<td>
+					<a>Delacroix, Eugene</a>
+				</td>
+				<td>
+					<a>1830</a>
+				</td>
+				<td class="gg">
+					<a>Romanticism</a>
+				</td>
+			</tr>
+			<tr class="pp">
+				<td class="tt">
+					<input type="checkbox" name="pic" value="pic4"><img src="https://s-media-cache-ak0.pinimg.com/736x/d6/b2/48/d6b2485d94c84aeea3069861bfa0c8ee.jpg" style="width:128px;height:128px;"/>
+					<i>Kenny McCormick</i>
+				</td>
+				<td>
+					<a>Parker, Trey & Stone, Matt</a>
+				</td>
+				<td>
+					<a>1997</a>
+				</td>
+				<td class="gg">
+					<a>Realism</a>
+				</td>
+			</tr>
+			<tr class="pp">
+				<td class="tt">
+					<input type="checkbox" name="pic" value="pic5"><img src="https://s-media-cache-ak0.pinimg.com/236x/dd/a4/20/dda420dda7a75a62ec944d8c6429d66b.jpg" style="width:128px;height:128px;"/>
+					<i>Mademoiselle Caroline Riviere</i>
+				</td>
+				<td>
+					<a>Ingres, Jean-Auguste</a>
+				</td>
+				<td>
+					<a>1806</a>
+				</td>
+				<td class="gg">
+					<a>Neo-Classicism</a>
+				</td>
+			</tr>
+		</tbody>
+	</table> 
+</div>   
+</form>
+</body>
+</html>
